@@ -1,0 +1,16 @@
+﻿Console.BackgroundColor = ConsoleColor.Green;
+Console.ForegroundColor = ConsoleColor.Magenta;
+// Console.Beep(440, 2000);
+Console.WriteLine("Enter your rulers name.");
+string ruler = Console.ReadLine();
+int duchy = 0; 
+int estate = 0;
+int province = 0;
+Console.WriteLine("How many duchies does " + ruler + " have?");
+duchy = Int32.Parse(Console.ReadLine()) * 3;
+Console.WriteLine("How many estates does " + ruler + " have?");
+estate = Int32.Parse(Console.ReadLine());
+Console.WriteLine("How many provinces does " + ruler + " have?");
+province = Int32.Parse(Console.ReadLine()) * 6;
+int total = province + estate + duchy;
+Console.WriteLine("The kingdom of " + ruler + " is worth " + total + " points!");
