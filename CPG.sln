@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPG10", "CPG10\CPG10.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPG11", "CPG11\CPG11.csproj", "{F86BEBD8-E1E2-416C-B850-4FE417D27250}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPG12", "CPG12\CPG12.csproj", "{30AEEF68-D907-4FAC-9434-39990CF1E3BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,9 @@ Global
 		{F86BEBD8-E1E2-416C-B850-4FE417D27250}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F86BEBD8-E1E2-416C-B850-4FE417D27250}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F86BEBD8-E1E2-416C-B850-4FE417D27250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30AEEF68-D907-4FAC-9434-39990CF1E3BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30AEEF68-D907-4FAC-9434-39990CF1E3BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30AEEF68-D907-4FAC-9434-39990CF1E3BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30AEEF68-D907-4FAC-9434-39990CF1E3BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
