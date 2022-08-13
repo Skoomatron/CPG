@@ -29,7 +29,7 @@ Fletching GetFletching()
     {
         "plastic" => Fletching.plastic,
         "turkey" => Fletching.turkeyFeather,
-        "goose" => Fletching.plastic
+        "goose" => Fletching.gooseFeather
     };
 }
 
