@@ -61,9 +61,12 @@ string RangeCheck(int guess)
 do
 {
     string response;
+    Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine("STATUS: Round: " + round + " City Health: " + cityCurrent + "/15 Manticore Health: " + manticoreCurrent + "/10");
     int damage = AttackType(round);
+    Console.ForegroundColor = ConsoleColor.Magenta;
     Console.WriteLine("The cannon is expected to do " + damage + " this turn!");
+    Console.ForegroundColor = ConsoleColor.Blue;
     Console.WriteLine("Player 2 enter your desired cannon range!");
     playerGuess = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine(RangeCheck(playerGuess));
