@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPG16", "CPG16\CPG16.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPG17", "CPG17\CPG17.csproj", "{66A81686-83E1-4F46-9302-799493F6C632}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPG18", "CPG18\CPG18.csproj", "{5759CD46-E144-40C1-8EF5-AB4C923E1CF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +110,9 @@ Global
 		{66A81686-83E1-4F46-9302-799493F6C632}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66A81686-83E1-4F46-9302-799493F6C632}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66A81686-83E1-4F46-9302-799493F6C632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5759CD46-E144-40C1-8EF5-AB4C923E1CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5759CD46-E144-40C1-8EF5-AB4C923E1CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5759CD46-E144-40C1-8EF5-AB4C923E1CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5759CD46-E144-40C1-8EF5-AB4C923E1CF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
