@@ -4,19 +4,26 @@ Console.WriteLine("N - No");
 string input = Console.ReadLine();
 Point newPoint = input switch
 {
-    "Y" => GetCords(),
-    "N" => Point(),
-    _ => 
-}
+    "Y" => GetCords(true),
+    "N" => GetCords(false),
+    _ => GetCords(false)
+};
 
 Console.WriteLine("The coordinates are (" + newPoint._xCord + ", " + newPoint._yCord + ").");
 
-Point GetCords()
+Point GetCords(bool check)
 {
-    int yCord = GetY();
-    int xCord = GetX();
-
-    return new Point(yCord, xCord);
+    if (check)
+    {
+        int yCord = GetY();
+        int xCord = GetX();
+        return new Point(yCord, xCord);
+    }
+    else
+    {
+        return new Point();
+    }
+  
 }
 int GetX()
 {
@@ -32,6 +39,8 @@ int GetY()
     return input;
 }
 
+
+
 class Point
 {
     public int _xCord;
@@ -39,7 +48,7 @@ class Point
 
     public Point()
     {
-        _xCord = 0;
+        _xCord = 1;
         _yCord = 0;
     }
 
