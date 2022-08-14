@@ -8,8 +8,10 @@ Console.WriteLine("6 - Green?");
 Console.WriteLine("7 - Blue?");
 Console.WriteLine("8 - Purple?");
 Console.WriteLine("9 - Custom?");
+
 string input = Console.ReadLine();
-input switch
+
+Colors newColor = input switch
 {
     "1" => Colors.White,
     "2" => Colors.Black,
@@ -19,12 +21,40 @@ input switch
     "6" => Colors.Green,
     "7" => Colors.Blue,
     "8" => Colors.Purple,
-    "9" => GetColor()
+    "9" => GetColor(),
+    _ => Colors.Black,
 };
+
+Console.WriteLine("Your color contains " + newColor._blue + " blue, " + newColor._green + " green, and " + newColor._red + " red.");
 
 Colors GetColor()
 {
-    
+    int blue = GetBlue();
+    int green = GetGreen();
+    int red = GetRed();
+
+    return new Colors(blue, green, red);
+}
+
+int GetBlue()
+{
+    Console.WriteLine("How much blue should your color have?");
+    int input = Convert.ToInt32(Console.ReadLine());
+    return input;
+}
+
+int GetGreen()
+{
+    Console.WriteLine("How much green should your color have?");
+    int input = Convert.ToInt32(Console.ReadLine());
+    return input;
+}
+
+int GetRed()
+{
+    Console.WriteLine("How much red should your color have?");
+    int input = Convert.ToInt32(Console.ReadLine());
+    return input;
 }
 
 class Colors
