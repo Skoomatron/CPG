@@ -1,8 +1,6 @@
 ﻿Arrow arrow = GetArrow();
 Console.WriteLine($"That arrow costs {arrow.Cost} gold.");
 
-
-
 Arrow GetArrow()
 {
     Arrowhead arrowhead = GetArrowheadType();
