@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPG24", "CPG24\CPG24.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPG25", "CPG25\CPG25.csproj", "{496D5774-2F9A-413B-9F19-5D045488F01A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPG26", "CPG26\CPG26.csproj", "{48DDB4AD-A99C-4939-8351-CE0D07E696E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -156,5 +158,9 @@ Global
 		{496D5774-2F9A-413B-9F19-5D045488F01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{496D5774-2F9A-413B-9F19-5D045488F01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{496D5774-2F9A-413B-9F19-5D045488F01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48DDB4AD-A99C-4939-8351-CE0D07E696E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DDB4AD-A99C-4939-8351-CE0D07E696E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DDB4AD-A99C-4939-8351-CE0D07E696E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DDB4AD-A99C-4939-8351-CE0D07E696E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
