@@ -4,25 +4,13 @@
     private bool _lengthCheck;
     private bool _containsNumber;
     private bool _forbidden;
+    private bool _upper;
+    private bool _lower;
 
     Validator(string password)
     {
         _password = password;
     }
-    
-    public void Password()
-    {
-        do
-        {
-            Console.WriteLine("Please enter a password.");
-            string input = Console.ReadLine();
-            foreach (char character in input)
-            {
-        
-            }
-        } while (true);
-    }
-
     public void LengthCheck(string password)
     {
         if (password.Length >= 6 && password.Length <= 13)
@@ -32,15 +20,33 @@
         else
         {
             Console.WriteLine("Password has an invalid length!");
-            Password();
         }
     }
 
-    public void ContainsNumber(int number)
+    public void ContainsForbidden(char character)
     {
-        if (typeof(number) == Int32)
+        if (character == "T" || character == "&")
         {
-            
+            Console.WriteLine("Password contains the forbidden characters T or &!");
+        }
+    }
+
+    public void ContainsNumber(char number)
+    {
+        if (Convert.ToInt32(number))
+        {
+            _containsNumber = true;
+        }
+    }
+
+    public void CaseChecker(char character)
+    {
+        if (char.IsUpper(character))
+        {
+            _upper = true;
+        } else if (char.IsLower(character))
+        {
+            _lower = true;
         }
     }
 }
