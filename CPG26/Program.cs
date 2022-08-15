@@ -1,23 +1,16 @@
-﻿Card newCard = new Card();
-Console.WriteLine("What type of card is the current card?");
-Console.WriteLine(newCard.CheckRank(newCard._cardRank));
-
-void Start()
+﻿
+foreach (CardColors color in Enum.GetValues(typeof(CardColors))) 
 {
-    AllCards();
-}
-
-void AllCards()
-{
-    foreach (CardColors color in Enum.GetValues(typeof(CardColors))) 
+    foreach (CardRanks card in Enum.GetValues(typeof(CardRanks))) 
     {
-        foreach (CardRanks card in Enum.GetValues(typeof(CardRanks))) 
-        {
-            Card thisCard = new Card(color, card);
-            Console.WriteLine("The " + thisCard._cardColor + " " + thisCard._cardRank);
-        }
+        Card thisCard = new Card(color, card);
+        Console.WriteLine("The " + thisCard._cardColor + " " + thisCard._cardRank);
     }
 }
+
+Card newCard = new Card();
+Console.WriteLine("What type of card is the current card?");
+Console.WriteLine(newCard.CheckRank(newCard._cardRank));
 class Card
 {
     public CardColors _cardColor;
